@@ -1,0 +1,221 @@
+header {
+  background-image: url("../images/Rectangle 9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-color: rgb(0, 0, 0);
+  height: 115vh;
+  position: relative;
+}
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2% 5%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+}
+.burger {
+  position: absolute;
+  left: calc(1rem + 1vw);
+  top: calc(1rem + 1vw);
+  width: calc(1rem + 1vw);
+  display: none;
+  transition: 0.5s ease;
+}
+.navigation nav {
+  font-size: calc(0.5rem + 0.5vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 50vw;
+}
+.navigation nav a:link,
+.navigation nav :visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.navigation .btnsignIn {
+  background-color: rgb(255, 255, 255);
+  padding: 0.8% 3%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.headercontent {
+  margin-top: 8%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.headercontent img {
+  width: 35vw;
+}
+.headercontent p {
+  font-weight: bold;
+  font-size: calc(0.8rem + 1vw);
+}
+.headercontent .small {
+  font-size: calc(0.5rem + 1vw) !important;
+  width: calc(1rem + 70vw);
+  font-weight: 400 !important;
+  margin: 0 auto;
+}
+.headercontent button {
+  padding: calc(0.5rem + 1vw) calc(1.5rem + 5vw);
+  font-size: calc(0.5rem + 1vw);
+  margin-top: 2%;
+  background: rgb(9, 2, 123);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(112, 112, 113, 0.307)),
+    color-stop(35%, rgba(92, 92, 108, 0.212)),
+    to(rgba(89, 89, 96, 0.212))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(112, 112, 113, 0.307) 0%,
+    rgba(92, 92, 108, 0.212) 35%,
+    rgba(89, 89, 96, 0.212) 100%
+  );
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.burgerMenu {
+  width: 100vw;
+  position: fixed;
+  height: 40vh;
+  background: linear-gradient(
+    90deg,
+    rgba(112, 112, 113) 0%,
+    rgba(92, 92, 108) 35%,
+    rgba(89, 89, 96) 100%
+  );
+  color: rgb(255, 255, 255);
+  z-index: 20;
+}
+.burgerMenu nav {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1rem + 1vw);
+}
+.burgerMenu nav {
+  font-size: calc(1rem + 2vw);
+  padding: calc(1rem + 1vw);
+}
+.burgerMenu nav a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.burgerMenu nav img {
+  width: calc(1rem + 2vw);
+}
+.burgerMenu nav .line {
+  width: calc(1rem + 40vw);
+}
+.hidden {
+  display: none;
+}
+
+.modal {
+  z-index: 30;
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(7, 14, 37, 0.786) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.6) 8.16%, rgba(0, 0, 0, 0) 19.95%);
+  padding: calc(1rem + 10vw);
+  transform: scale(0);
+}
+.modalcontainer {
+  width: 40vw;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(
+      138.79deg,
+      rgba(123, 138, 167, 0.759) 34.79%,
+      rgba(149, 184, 255, 0.418) 97.98%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0.4) 100%
+    );
+  border-radius: 20px;
+  padding: calc(1rem + 1vw);
+
+  color: rgba(255, 255, 255, 1);
+}
+
+.modalcontainer h1 {
+  font-weight: bold;
+
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.modalcontainer form {
+  text-align: left;
+  margin-left: 18%;
+}
+.modalcontainer form input {
+  width: 80%;
+  font-size: calc(0.6rem + 0.6vw);
+  padding: 1.7% 2%;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-bottom: 5%;
+  outline: none;
+}
+.modal-container form input[type="submit"] {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.modal.active {
+  transform: scale(1);
+}
+
+@media (max-width: 420px) {
+  .modal {
+    height: 180vw;
+  }
+  header {
+    background-image: url("../images/Rectangle 9.png");
+    background-repeat: no-repeat;
+    background-size: 150vw;
+    height: 38vh;
+    background-position: top 0% center;
+    background-color: rgb(0, 0, 0);
+  }
+  .navigation {
+    display: none;
+  }
+  .headercontent {
+    margin-top: 0;
+    padding-top: calc(1rem + 1vw);
+  }
+  .burger {
+    display: block;
+  }
+  .modalcontainer {
+    width: 75vw;
+    margin: 0 0;
+  }
+}

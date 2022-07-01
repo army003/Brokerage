@@ -1,0 +1,205 @@
+.opportunities {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5%;
+  position: relative;
+  text-align: center;
+}
+
+.opportunities .containers {
+  display: flex;
+  transition: 0.7s ease-out;
+}
+.window {
+  width: 70%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.opportunities .container {
+  margin: 0 auto;
+  min-width: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgb(59, 67, 81)),
+    to(rgba(88, 144, 254, 0))
+  );
+  background: linear-gradient(
+    to bottom right,
+    rgb(59, 67, 81),
+    rgba(88, 144, 254, 0)
+  );
+  color: rgb(255, 255, 255);
+  padding: 2%;
+  font-size: calc(0.15rem + 0.15vw);
+  text-align: left;
+  -ms-flex-pack: distribute;
+  gap: 8%;
+  border-radius: 20px;
+  position: relative;
+}
+.opportunities .container .box {
+  width: 33%;
+}
+.opportunities .container .box p {
+  font-size: calc(0.5rem + 0.3vw);
+}
+.opportunities .container .box h2 {
+  font-size: calc(0.5rem + 0.6vw);
+}
+.opportunities .arrow {
+  background-color: rgb(43, 71, 109);
+  position: absolute;
+  border-radius: 50%;
+  padding: 1% 0.9%;
+  display: flex;
+  text-align: center;
+  top: 58%;
+  left: 17%;
+  cursor: pointer;
+  position: absolute;
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgb(59, 67, 81)),
+    to(rgba(88, 144, 254, 0))
+  );
+  background: linear-gradient(
+    to bottom right,
+    rgb(59, 67, 81),
+    rgba(88, 144, 254, 0)
+  );
+}
+.opportunities .arrow2 {
+  position: absolute;
+  background-color: rgb(43, 71, 109);
+  border-radius: 50%;
+  padding: 1% 0.9%;
+  display: flex;
+  text-align: center;
+  top: 58%;
+  right: 17%;
+  cursor: pointer;
+
+  transform: rotateY(180deg);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(rgb(59, 67, 81)),
+    to(rgba(88, 144, 254, 0))
+  );
+  background: linear-gradient(
+    to bottom right,
+    rgb(59, 67, 81),
+    rgba(88, 144, 254, 0)
+  );
+}
+.opportunities .container .arrow2 img {
+  -webkit-transform: rotateY(180deg);
+
+  transform: rotateY(180deg);
+}
+.opportunities .points {
+  width: 5vw;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 47%;
+  margin-top: 2%;
+}
+.opportunities .points .point {
+  width: calc(0.4rem + 0.1vw);
+  height: calc(0.4rem + 0.1vw);
+  border-radius: 50%;
+  background-color: rgba(59, 67, 81, 0.382);
+  transition: 0.5s ease;
+}
+.opportunities .points .active {
+  width: calc(1rem + 0.1vw);
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 420px) {
+  .opportunities .container {
+    padding: 5%;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .opportunities .container .box {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+  .opportunities .container .arrow2,
+  .opportunities .container .arrow {
+    display: none;
+  }
+  .opportunities .points {
+    margin-left: 42%;
+  }
+
+  .opportunities .arrow {
+    background-color: rgb(43, 71, 109);
+    position: absolute;
+    border-radius: 50%;
+    padding: 2.1% 1.5%;
+    display: flex;
+    text-align: center;
+    top: 53%;
+    left: 8%;
+    cursor: pointer;
+    position: absolute;
+
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgb(59, 67, 81)),
+      to(rgba(88, 144, 254, 0))
+    );
+    background: linear-gradient(
+      to bottom right,
+      rgb(59, 67, 81),
+      rgba(88, 144, 254, 0)
+    );
+  }
+  .opportunities .arrow2 {
+    position: absolute;
+    background-color: rgb(43, 71, 109);
+    border-radius: 50%;
+    padding: 2.1% 1.5%;
+    display: flex;
+    text-align: center;
+    top: 53%;
+    right: 8%;
+    cursor: pointer;
+
+    transform: rotateY(180deg);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgb(59, 67, 81)),
+      to(rgba(88, 144, 254, 0))
+    );
+    background: linear-gradient(
+      to bottom right,
+      rgb(59, 67, 81),
+      rgba(88, 144, 254, 0)
+    );
+  }
+}

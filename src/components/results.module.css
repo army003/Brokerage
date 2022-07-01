@@ -1,0 +1,63 @@
+.results {
+  text-align: center;
+  padding: 10% 0;
+}
+.results .wrapper {
+  width: 80%;
+  font-size: calc(0.6rem + 0.8vw);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: calc(0.6rem + 6.8vw);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.results .wrapper .wrapperresult {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  width: calc(1rem + 40vw);
+}
+.results .wrapper .wrapperresult h3 {
+  font-size: calc(1rem + 2vw);
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.results .wrapper img {
+  width: calc(1rem + 40vw);
+}
+
+@media (max-width: 420px) {
+  .results {
+    margin-top: 10%;
+    padding: 2%;
+    background: linear-gradient(85deg, rgb(12, 25, 50), rgb(86, 107, 148));
+  }
+  .results .wrapper {
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  .results .wrapper img {
+    position: absolute;
+
+    width: calc(1rem + 100vw);
+    opacity: 0.4;
+    left: -30%;
+    bottom: 10%;
+  }
+  .results .heading {
+    font-size: calc(1rem + 5vw);
+  }
+  .results .wrapper .wrapperresult {
+    text-align: center;
+    z-index: 10;
+    font-size: calc(1rem + 1.5vw);
+    width: calc(1rem + 80vw);
+  }
+  .results .wrapper .wrapperresult h3 {
+    font-size: calc(1rem + 6vw);
+  }
+}

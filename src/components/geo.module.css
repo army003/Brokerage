@@ -1,0 +1,54 @@
+.geography {
+  text-align: center;
+  padding-bottom: 5%;
+}
+.geography .map {
+  width: 100%;
+}
+.geography .partners {
+  width: 70%;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+.geography .partners h2 {
+  margin-bottom: 3%;
+}
+.geography .partners img {
+  margin-right: 10em;
+}
+.geography .partners img:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 420px) {
+  #geoHead,
+  .map {
+    display: none;
+  }
+  .geography .partners h2 {
+    text-align: center;
+
+    color: rgba(168, 198, 255, 0.5294117647);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 15%;
+    font-size: calc(1rem + 2vw);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .geography .partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .geography .partners img {
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 15%;
+  }
+  .geography .partners img:last-child {
+    width: 58vw;
+    margin-left: 6%;
+  }
+}

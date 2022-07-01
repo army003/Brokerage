@@ -1,0 +1,114 @@
+.footer {
+  background-color: rgb(255, 255, 255);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.footer .wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 5% 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 3rem;
+}
+.footer nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.footer nav .links a:link,
+.footer nav .links :visited {
+  color: #727272;
+  text-decoration: none;
+}
+.footer nav .contacts li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+  color: #727272;
+}
+.footer nav .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.footer nav .btn button {
+  width: 9rem;
+  padding: 8% 0;
+  border: none;
+  background: linear-gradient(45deg, rgb(12, 25, 50), rgb(86, 107, 148));
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+}
+.footer .last {
+  margin-top: 8%;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer .last span {
+  color: #727272;
+}
+.footer .last .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+}
+.footer .last .socialmedia img {
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 10px rgb(66, 66, 66);
+  box-shadow: 2px 2px 10px rgb(66, 66, 66);
+}
+
+@media (max-width: 420px) {
+  .footer .wrapper {
+    text-align: center;
+  }
+  .logo {
+    width: calc(1rem + 30vw);
+  }
+  .footer nav {
+    flex-direction: column;
+    text-align: left;
+  }
+  .links a {
+    font-size: calc(1rem + 1vw);
+  }
+  .footer nav .btn {
+    margin-left: calc(1rem + 13vw);
+    margin-top: 15%;
+  }
+  .footer .last {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: calc(1rem + 8vw);
+  }
+  .footer nav .btn button {
+    padding: calc(0.8rem + 0.2vw) calc(1rem + 1vw);
+  }
+}

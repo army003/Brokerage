@@ -1,0 +1,96 @@
+.connect {
+  text-align: center;
+  padding-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: calc(0.6rem + 0.8vw);
+}
+.connect .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: calc(1rem + 9vw);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.connect .wrapperinfo {
+  color: rgb(255, 255, 255);
+}
+.connect .wrapperinfo li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: calc(0.6rem + 0.8vw);
+}
+.connect .contactinput {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(255, 255, 255);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: calc(0.6rem + 0.6vw);
+}
+.connect .contactinput input[type="text"] {
+  border: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  width: 100%;
+  padding: 3% 2%;
+  border-radius: 5px;
+  margin-top: 2%;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5%;
+  font-size: calc(0.6rem + 0.6vw);
+}
+.connect .contactinput input[type="submit"] {
+  margin-top: 1rem;
+  padding: 3% 2%;
+  font-size: calc(0.6rem + 0.8vw);
+  width: 100%;
+  border-radius: 3px;
+  background: linear-gradient(85deg, rgb(12, 25, 50), rgb(86, 107, 148));
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 420px) {
+  .connect .wrapper {
+    flex-direction: column;
+  }
+
+  .connect .wrapperinfo {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: calc(1rem + 11vw);
+  }
+  .connect .wrapperinfo li {
+    width: calc(1rem + 30vw);
+    flex-direction: column;
+    align-items: center;
+  }
+  .connect .wrapperinfo li img {
+    width: calc(1rem + 10vw);
+  }
+  .connect .contactinput {
+    width: 90vw;
+    font-size: calc(0.6rem + 1vw);
+  }
+}
