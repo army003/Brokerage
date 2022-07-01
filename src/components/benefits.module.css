@@ -1,0 +1,119 @@
+.benefits {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.benefits .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  gap: 1.2rem;
+}
+.benefits .container .box {
+  font-size: calc(0.2rem + 0.5vw);
+  text-align: left;
+  line-height: calc(0.6rem + 0.8vw);
+}
+.benefits .container .box h2 {
+  font-size: calc(0.2rem + 1vw);
+}
+.benefits .container .box p {
+  margin-top: 10%;
+  width: 75%;
+}
+.benefits .container .box .card {
+  position: relative;
+}
+.benefits .container .box .card #v1 {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+.benefits .container .box .card #v2 {
+  position: absolute;
+  width: 100%;
+  top: -70%;
+}
+.benefits .container .box .card #v3 {
+  position: absolute;
+  top: 30%;
+  left: -25%;
+}
+.benefits .container .box .card #v4 {
+  position: absolute;
+  top: 0%;
+  left: -25%;
+}
+.benefits .container .box .card #v5 {
+  position: absolute;
+  top: -55%;
+  left: -30%;
+}
+.benefits .container .box .ellipse {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.benefits .container .box .ellipse img {
+  width: calc(1rem + 9vw);
+}
+.benefits .container .box .ellipse span {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 1%;
+  font-size: calc(0.5rem + 0.4vw);
+  width: 100%;
+}
+.benefits .container:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.benefits .container:nth-child(2) {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.benefits .container:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.benefits .container #last {
+  margin-left: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 4.5rem;
+}
+.benefits .container #first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 10rem;
+}
