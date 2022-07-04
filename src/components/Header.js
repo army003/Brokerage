@@ -26,7 +26,21 @@ const Header = () => {
       .querySelector(".header_modalcontainer__VxMQJ")
       .classList.toggle("header_hidden__q1+3w");
   };
+
   const [accepted, setAccepted] = useState(false);
+
+  const check = () => {
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+
+    if (name === "" && phone === "") {
+      document.getElementById("warning").innerHTML = "Заполните все поля!";
+    } else {
+      setAccepted(true);
+      HideModal();
+    }
+    return accepted;
+  };
   return (
     <header>
       <div
@@ -50,18 +64,18 @@ const Header = () => {
           <form>
             <label htmlFor="name">Ваше имя</label>
             <br />
-            <input type="text" id="name" />
+            <input type="text" id="name" required />
             <br />
             <label htmlFor="phone">Номер телефона </label>
             <br />
-            <input type="text" id="phone" placeholder="+7" />
+            <input type="text" id="phone" required placeholder="+7" />
             <br />
+            <p id="warning"></p>
             <input
               type="button"
               value="Заказать звонок"
               onClick={() => {
-                setAccepted(true);
-                HideModal();
+                check();
               }}
             />
           </form>
