@@ -36,6 +36,8 @@ const Header = () => {
     if (name === "" && phone === "") {
       document.getElementById("warning").innerHTML = "Заполните все поля!";
     } else {
+      document.getElementById("warning").innerHTML = "";
+
       setAccepted(true);
       HideModal();
     }
