@@ -5,7 +5,9 @@ import Burger from "../icons/burger.svg";
 import Line from "../icons/linee.svg";
 import X from "../icons/x.svg";
 import "../style.css";
+import Accept from "../icons/check (3) 1.svg";
 import { useState } from "react";
+//header_modalAccepted__6+pam
 const Header = () => {
   const [modalActive, setModalActive] = useState(false);
   const classes = styles.burgerMenu + " " + styles.hidden;
@@ -19,6 +21,12 @@ const Header = () => {
       .getElementById("burgerMenu")
       .classList.toggle("header_hidden__q1+3w");
   };
+  const HideModal = () => {
+    document
+      .querySelector(".header_modalcontainer__VxMQJ")
+      .classList.toggle("header_hidden__q1+3w");
+  };
+  const [accepted, setAccepted] = useState(false);
   return (
     <header>
       <div
@@ -27,7 +35,11 @@ const Header = () => {
             ? "header_modal__G5b7P header_active__XtLUz"
             : "header_modal__G5b7P"
         }
-        onClick={() => setModalActive(false)}
+        onClick={() => {
+          setModalActive(false);
+          HideModal();
+          setAccepted(false);
+        }}
       >
         <div
           className={styles.modalcontainer}
@@ -44,8 +56,26 @@ const Header = () => {
             <br />
             <input type="text" id="phone" placeholder="+7" />
             <br />
-            <input type="submit" value="Заказать звонок" />
+            <input
+              type="button"
+              value="Заказать звонок"
+              onClick={() => {
+                setAccepted(true);
+                HideModal();
+              }}
+            />
           </form>
+        </div>
+
+        <div
+          className={
+            accepted
+              ? "header_modalAccepted__6+pam header_active__XtLUz"
+              : "header_modalAccepted__6+pam"
+          }
+        >
+          <img src={Accept} />
+          <p>Спасибо. мы приняли Вашу заявку</p>
         </div>
       </div>
 
