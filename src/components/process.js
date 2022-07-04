@@ -2,7 +2,7 @@ import React from "react";
 import BgPhoto from "../Mask Group.svg";
 import BgPhoto2 from "../Mask Group2.svg";
 import BgPhoto3 from "../Mask Group3.svg";
-import styles from "./process.module.css";
+import styles from "./styles/process.module.css";
 const Process = () => {
   return (
     <section className={styles.process}>

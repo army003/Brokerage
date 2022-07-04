@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./mobialBen.module.css";
+import styles from "./styles/mobialBen.module.css";
 import Ellipse from "../images/Group 22.png";
 const Mobial = () => {
   return (

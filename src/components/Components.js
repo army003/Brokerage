@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./components.module.css";
+import styles from "./styles/components.module.css";
 const Components = () => {
   return (
     <section className={styles.components}>

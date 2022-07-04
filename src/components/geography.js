@@ -3,7 +3,7 @@ import Map from "../icons/map.svg";
 import Eurasian from "../icons/eurasian-bank-3 1.svg";
 import Freedom from "../icons/Group 744.svg";
 import Isker from "../icons/IskerСredit 1.svg";
-import styles from "./geo.module.css";
+import styles from "./styles/geo.module.css";
 const Geography = () => {
   return (
     <div className={styles.geography}>

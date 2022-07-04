@@ -3,7 +3,7 @@ import BoxImg from "../images/Group 746.png";
 import BoxImg2 from "../images/Group 747.png";
 import BoxImg3 from "../images/Group 748.png";
 import Arrow from "../images/Arrow 8.png";
-import styles from "./opportunities.module.css";
+import styles from "./styles/opportunities.module.css";
 const Opportunities = () => {
   const classes = styles.point + " " + styles.active;
 

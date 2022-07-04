@@ -5,7 +5,7 @@ import Stroke2 from "../Vector 2.svg";
 import Stroke3 from "../Vector(3).svg";
 import Stroke4 from "../Vector4.svg";
 import Stroke5 from "../Vector5.svg";
-import styles from "./benefits.module.css";
+import styles from "./styles/benefits.module.css";
 
 const Benefits = () => {
   return (

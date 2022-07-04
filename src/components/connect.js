@@ -3,7 +3,7 @@ import TextIcon from "../icons/document-text.svg";
 import LockIcon from "../icons/lock-closed.svg";
 import CapIcon from "../icons/academic-cap.svg";
 import ThumbIcon from "../icons/thumb-up.svg";
-import styles from "./connect.module.css";
+import styles from "./styles/connect.module.css";
 const Connect = () => {
   return (
     <div className={styles.connect}>

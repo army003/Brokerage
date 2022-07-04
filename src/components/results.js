@@ -1,6 +1,6 @@
 import React from "react";
 import Target from "../icons/Mask Group3.svg";
-import styles from "./results.module.css";
+import styles from "./styles/results.module.css";
 const Results = () => {
   return (
     <section className={styles.results}>

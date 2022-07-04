@@ -5,7 +5,7 @@ import Mail from "../icons/mail.svg";
 import Fb from "../icons/facebook.svg";
 import Wp from "../icons/wp.svg";
 import Ig from "../icons/inst.svg";
-import styles from "./footer.module.css";
+import styles from "./styles/footer.module.css";
 const Footer = () => {
   return (
     <section className={styles.footer}>

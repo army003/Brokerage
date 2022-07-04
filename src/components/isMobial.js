@@ -1,6 +1,5 @@
 import React from "react";
 import Benefits from "./benefits";
-import Geography from "./geography";
 import Mobial from "./mobialBen";
 const IsMobial = () => {
   let windowWidth = window.outerWidth;
